@@ -12,6 +12,11 @@
   justify-content: center;
 }
 
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
 .sound-button {
   background-color: lightgray;
   width: 20%;
@@ -20,7 +25,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: transparent 1px solid;
+}
+
+.sound-button:active {
   border: black 1px solid;
+}
+
+.sound-button:hover {
+  background-color: darkgray;
 }
 
 @media screen and (min-width: 480px) and (max-width: 599px) {
