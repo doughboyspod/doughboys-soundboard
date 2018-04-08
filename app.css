@@ -1,0 +1,55 @@
+:root {
+  --screen-xs: 600px;
+  --screen-sm: 900px;
+  --screen-md: 1200px;
+  --screen-lg: 1800px;
+}
+
+.main-container {
+  font-family: sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.sound-button {
+  background-color: lightgray;
+  width: 20%;
+  height: 15vw;
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: transparent 1px solid;
+  border-radius: 10px;
+}
+
+.sound-button:active {
+  border: black 1px solid;
+}
+
+.sound-button:hover {
+  background-color: darkgray;
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+  .sound-button {
+    width: 45%;
+    height: 35vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .sound-button {
+    font-size: 1.5rem;    
+    width: 35%;
+    height: 35vw;
+  }
+}
