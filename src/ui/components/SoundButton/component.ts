@@ -4,7 +4,10 @@ export default class SoundButton extends Component {
 
   play() {
     console.log('play', this.args.src);
-    let sound = document.getElementById(this.args.src);
+    var sound = new Howl({
+      src: [this.args.src]
+    });
+    
     sound.play();
   }
 }
